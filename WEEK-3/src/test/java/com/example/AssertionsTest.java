@@ -24,7 +24,6 @@ public class AssertionsTest {
         // Assert not null
         assertNotNull(new Object());
 
-        // A few extras that are useful in practice
         assertNotEquals(4, 2 + 3);
         assertArrayEquals(new int[] {1, 2, 3}, new int[] {1, 2, 3});
         assertThrows(IllegalArgumentException.class, () -> {
