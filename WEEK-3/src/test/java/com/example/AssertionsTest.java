@@ -4,11 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Exercise 3: Assertions in JUnit
- *
- * Demonstrates the most common JUnit assertions.
- */
+
 public class AssertionsTest {
 
     @Test
