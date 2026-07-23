@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="indiaCountry" class="com.cognizant.springlearn.model.Country">
+        <constructor-arg value="IN" />
+        <constructor-arg value="India" />
+    </bean>
+
+    <bean id="usCountry" class="com.cognizant.springlearn.model.Country">
+        <constructor-arg value="US" />
+        <constructor-arg value="United States" />
+    </bean>
+
+    <bean id="japanCountry" class="com.cognizant.springlearn.model.Country">
+        <constructor-arg value="JP" />
+        <constructor-arg value="Japan" />
+    </bean>
+
+    <bean id="germanyCountry" class="com.cognizant.springlearn.model.Country">
+        <constructor-arg value="DE" />
+        <constructor-arg value="Germany" />
+    </bean>
+
+    <!-- Exercise 5: full country list, used by CountryDao -->
+    <util:list id="countryList">
+        <ref bean="indiaCountry" />
+        <ref bean="usCountry" />
+        <ref bean="japanCountry" />
+        <ref bean="germanyCountry" />
+    </util:list>
+
+</beans>
